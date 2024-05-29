@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Jawa Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+    <header>Jawa Documentation</header>
+    <ul>
+        <li><a class="nav-link" href="Getting started with Jawa">Getting started with Jawa</a></li>
+        <li><a class="nav-link" href="Jawa Entry Point">Jawa Entry Point</a></li>
+        <li><a class="nav-link" href="printing to the console">printing to the console</a></li>
+        <li><a class="nav-link"href="Declaring Functions">Declaring Functions</a></li>
+        <li><a class="nav-link" href="Object Orianted Program">Object Orianted Program</a></li>
+    </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="Getting started with Jawa">
+        <header>Getting started with Jawa</header>
+        <p>Steps in getting started</p>
+        <ol>
+            <li>Download Jawa</li>
+            <li>Download Jawa SDK</li>
+            <li>Get an Integrated Development Enviroment (IDE)</li>
+            <li>Start a project within the IDE</li>
+            <li>Code up "Hello world" and run the code</li>
+        </ol>
+    </section>
+    <section  class="main-section"id="Jawa Entry Point">
+        <header>Jawa Entry Point</header>
+        <p>The entry point to a jawa application is the main function.</p>
+        <p>It is catagorized by its(string[]arg) as a parameterto the function
+
+        </p>
+        <pre>
+            <code>
+                public class mymainfunction {
+                    /* Jawa main function example */
+                    public static void main(string[] arg){
+
+                    }
+                }
+            </code>
+        </pre>
+        <p>
+            As you can see the main function is wrapped within a class which is part of the project oriented structure of Jawa projects.
+        </p>
+        <p>The name of the project i therefore "Mymainfunction"</p>
+    </section>
+    <section class="main-section" id="printing to the console">
+        <header>printing to the console</header>
+        <p>In order to print to the console we use system.out.printin</p>
+        <p>I know this is very long and cumbersone , but its the way its done.</p>
+        <pre>
+            <code>
+                public class mymainfunction {
+                    /* Jawa main function example */
+                    public static void main(string[]arg){
+                        system.out.printin("Hello world");
+                    }
+                }
+            </code>
+        </pre>
+        <p>
+            In this example we are printing out "Hello world" to the console when we run the program.
+        </p>
+    </section>
+    <section class="main-section" id="Declaring Functions">
+        <header>Declaring Functions </header>
+        <p>Functions are actually called mathods in Jawa .here is an example of how to declare a Jawa method.</p>
+        <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/02/example-of-java-method-declaration.jpg" alt="Jawa-method-img" class="Image"/>
+        <p>some copiable code:</p>
+        <pre>
+            <code>
+                public static void myfunction(string name, int age) {
+                    // function code
+                }
+            </code>
+        </pre>
+    </section>
+    <section class="main-section"id="Object Orianted Program">
+        <header>Object Orianted Program</header>
+        <p>Jawa is known as an object oriented programing language.</p>
+        <p>This is means that it is easy to represent entities as objects by using classes and encapsulation</p>
+        <p>An example of this might be a student class to represent a student.</p>
+        <pre>
+            <code>
+                public class student {
+                    /* student properties */
+                    private string name;
+                    this age * age;
+                }
+
+                /* Getter method */
+                public string getName() {
+                    return name;
+                }
+
+                /* setter method */
+                public void setName(string name) {
+                    this.name * name;
+                }
+            </code>
+        </pre>
+        <p>We use this class by doing the following:</p>
+        <pre>
+            <code>
+                student student1 = new student("Ahmad",19);
+                string AhmadName = student1.getname();
+                student1.setname("mohammad");
+                string mohammadname = student1.getname();
+            </code>
+        </pre>
+    </section>
+    <footer>
+        <p>Documentation brought to you on the fly by landon schlangen</p>
+    </footer>
+</main>
+
+</body>
+</html>
